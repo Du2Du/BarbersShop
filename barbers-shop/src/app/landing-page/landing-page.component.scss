@@ -1,0 +1,370 @@
+// Hero Section
+.hero-section {
+  min-height: 100vh;
+  background: var(--primary-200);
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+::ng-deep .schedule-now-button {
+
+  .p-button-label,
+  .p-button-icon {
+    color: #ffff;
+  }
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--primary-800);
+  line-height: 1.2;
+  margin: 0;
+
+  i {
+    color: var(--accent-500);
+    margin-right: 1rem;
+    font-size: 3rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--primary-600);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.hero-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--primary-700);
+
+  i {
+    color: #10b981;
+    font-size: 1.2rem;
+  }
+
+  span {
+    font-size: 1.1rem;
+  }
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.barber-chair-icon {
+  width: 16rem;
+  height: 16rem;
+  background: var(--primary-500);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  i {
+    font-size: 5rem;
+    color: white;
+  }
+}
+
+// Services Section
+.services-section {
+  padding: 5rem 0;
+  background: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--primary-800);
+  margin-bottom: 4rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: var(--primary-50);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+  }
+
+  .service-icon {
+    width: 4rem;
+    height: 4rem;
+    background: var(--primary-500);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+
+    i {
+      font-size: 1.5rem;
+      color: white;
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-800);
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: var(--primary-600);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .price {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--accent-600);
+  }
+}
+
+// About Section
+.about-section {
+  padding: 5rem 0;
+  background: var(--primary-50);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-800);
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.125rem;
+    color: var(--primary-600);
+    line-height: 1.7;
+    margin: 0;
+  }
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.stat-item {
+  text-align: center;
+
+  .stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-600);
+  }
+
+  .stat-label {
+    color: var(--primary-600);
+    font-size: 0.9rem;
+  }
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
+.scissors-icon {
+  width: 16rem;
+  height: 16rem;
+  background: var(--accent-500);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  i {
+    font-size: 5rem;
+    color: white;
+  }
+}
+
+// Contact Section
+.contact-section {
+  padding: 5rem 0;
+  background: white;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+
+  i {
+    width: 3rem;
+    height: 3rem;
+    background: var(--primary-500);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-800);
+    margin: 0 0 0.5rem 0;
+  }
+
+  p {
+    color: var(--primary-600);
+    margin: 0;
+    line-height: 1.6;
+  }
+}
+
+.cta-section {
+  background: var(--primary-50);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-800);
+    margin: 0;
+  }
+}
+
+// PrimeNG Button Customizations
+::ng-deep {
+  .p-button {
+    background: var(--primary-500) !important;
+    border-color: var(--primary-500) !important;
+
+    &:hover {
+      background: var(--primary-600) !important;
+      border-color: var(--primary-600) !important;
+    }
+
+    &.p-button-success {
+      background: var(--accent-500) !important;
+      border-color: var(--accent-500) !important;
+
+      &:hover {
+        background: var(--accent-600) !important;
+        border-color: var(--accent-600) !important;
+      }
+    }
+  }
+}
+
+// Animation
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
+}

@@ -1,0 +1,157 @@
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 class="hero-title">
+        <i class="pi pi-star-fill"></i>
+        Barbers Shop
+      </h1>
+      <p class="hero-subtitle">
+        Tradição, estilo e qualidade em cada corte. 
+        Experimente o melhor atendimento da cidade.
+      </p>
+      <div class="hero-features">
+        <div class="feature-item">
+          <i class="pi pi-check-circle"></i>
+          <span>Profissionais Experientes</span>
+        </div>
+        <div class="feature-item">
+          <i class="pi pi-check-circle"></i>
+          <span>Produtos Premium</span>
+        </div>
+        <div class="feature-item">
+          <i class="pi pi-check-circle"></i>
+          <span>Ambiente Acolhedor</span>
+        </div>
+      </div>
+      <p-button 
+        label="Agendar Horário" 
+        icon="pi pi-calendar-plus"
+        class="schedule-now-button"
+        size="large"
+        (onClick)="openScheduling()">
+      </p-button>
+    </div>
+    <div class="hero-image">
+      <div class="barber-chair-icon">
+        <i class="pi pi-user"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="services-section">
+  <div class="container">
+    <h2 class="section-title">Nossos Serviços</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="pi pi-user"></i>
+        </div>
+        <h3>Corte Tradicional</h3>
+        <p>Cortes clássicos com técnicas tradicionais</p>
+        <span class="price">R$ 35,00</span>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="pi pi-star"></i>
+        </div>
+        <h3>Barba & Bigode</h3>
+        <p>Aparar e modelar com precisão</p>
+        <span class="price">R$ 25,00</span>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="pi pi-heart"></i>
+        </div>
+        <h3>Combo Completo</h3>
+        <p>Corte + Barba + Tratamento</p>
+        <span class="price">R$ 55,00</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>Tradição e Qualidade</h2>
+        <p>
+          Há mais de 20 anos oferecendo os melhores serviços de barbearia. 
+          Nossa equipe é formada por profissionais experientes e apaixonados 
+          pela arte de cuidar da aparência masculina.
+        </p>
+        <div class="stats">
+          <div class="stat-item">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Anos de Experiência</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">5000+</span>
+            <span class="stat-label">Clientes Satisfeitos</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Qualidade Garantida</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-image">
+        <div class="scissors-icon">
+          <i class="pi pi-cog"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section">
+  <div class="container">
+    <h2 class="section-title">Onde Estamos</h2>
+    <div class="contact-content">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="pi pi-map-marker"></i>
+          <div>
+            <h4>Endereço</h4>
+            <p>Rua das Flores, 123<br>Centro - São Paulo/SP</p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <i class="pi pi-phone"></i>
+          <div>
+            <h4>Telefone</h4>
+            <p>(11) 99999-9999</p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <i class="pi pi-clock"></i>
+          <div>
+            <h4>Horário de Funcionamento</h4>
+            <p>Segunda à Sexta: 8h às 18h<br>Sábado: 8h às 16h</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="cta-section">
+        <h3>Pronto para um novo visual?</h3>
+        <p-button 
+          label="Agendar Agora" 
+          icon="pi pi-calendar-plus"
+          size="large"
+          severity="success"
+          class="schedule-now-button"
+          (onClick)="openScheduling()">
+        </p-button>
+      </div>
+    </div>
+  </div>
+</section>
