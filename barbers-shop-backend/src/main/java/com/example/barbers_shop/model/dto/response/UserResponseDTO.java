@@ -1,4 +1,4 @@
-package com.example.barbers_shop.model.dto;
+package com.example.barbers_shop.model.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

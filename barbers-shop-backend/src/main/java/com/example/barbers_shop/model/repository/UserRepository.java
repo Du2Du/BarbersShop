@@ -9,4 +9,5 @@ import com.example.barbers_shop.model.entity.User;
 public interface UserRepository extends JpaRepository<User, Long> {
   
   public User findByName(String name);
+  public User findByEmail(String email);
 }
